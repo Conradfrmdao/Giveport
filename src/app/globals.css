@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+/*
+  Palette: forest green for trust and money, one ochre accent used sparingly,
+  on warm paper instead of stark white so long pages are easy on the eyes.
+*/
+:root {
+  --paper: #faf8f3;
+  --paper-deep: #f2eee4;
+  --card: #ffffff;
+  --ink: #18201c;
+  --ink-soft: #4d5651;
+  --line: #e2ddd0;
+  --forest: #1f4d3a;
+  --forest-deep: #163a2b;
+  --forest-tint: #e6eee9;
+  --ochre: #b86a12;
+  --ochre-tint: #f6ead9;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-card: var(--card);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-forest: var(--forest);
+  --color-forest-deep: var(--forest-deep);
+  --color-forest-tint: var(--forest-tint);
+  --color-ochre: var(--ochre);
+  --color-ochre-tint: var(--ochre-tint);
+  --font-sans: var(--font-public-sans);
+  --font-serif: var(--font-newsreader);
+}
+
+html {
+  color-scheme: light;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-public-sans), ui-sans-serif, system-ui, sans-serif;
+  font-feature-settings: "tnum" 1;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--forest-tint);
+  color: var(--forest-deep);
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--ochre);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Long-form text on terms, privacy and guide pages. */
+.prose-gp {
+  max-width: 68ch;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--ink);
+}
+.prose-gp h2 {
+  font-family: var(--font-newsreader), Georgia, serif;
+  font-size: 1.75rem;
+  line-height: 1.2;
+  margin-top: 2.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--ink);
+}
+.prose-gp h3 {
+  font-weight: 600;
+  font-size: 1.0625rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.prose-gp p {
+  margin-top: 0.875rem;
+  color: var(--ink-soft);
+}
+.prose-gp ul,
+.prose-gp ol {
+  margin-top: 0.875rem;
+  padding-left: 1.25rem;
+  color: var(--ink-soft);
+}
+.prose-gp ul {
+  list-style: disc;
+}
+.prose-gp ol {
+  list-style: decimal;
+}
+.prose-gp li {
+  margin-top: 0.4rem;
+  padding-left: 0.25rem;
+}
+.prose-gp a {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.prose-gp strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+details > summary {
+  list-style: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
