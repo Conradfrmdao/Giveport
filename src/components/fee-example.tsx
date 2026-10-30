@@ -18,7 +18,7 @@ export function FeeExample({ amount }: { amount: number }) {
     },
     {
       label: `Payment processing, ${formatPercent(siteConfig.processorFeeMinPercent)}–${formatPercent(siteConfig.processorFeeMaxPercent)}`,
-      note: "Charged by NOWPayments, who run the checkout",
+      note: "Charged by our payment partner, who runs the checkout",
       value: `− ${formatUsd(fees.processorFeeMin)}–${formatUsd(fees.processorFeeMax)}`,
     },
     {

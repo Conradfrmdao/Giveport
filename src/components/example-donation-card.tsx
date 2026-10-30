@@ -50,7 +50,7 @@ export function ExampleDonationCard() {
             </div>
             <div className="min-w-0">
               <p className="font-serif text-xl leading-tight text-ink">Your name or organisation</p>
-              <p className="mt-0.5 text-xs text-ink-soft">Uganda · Receives USDT</p>
+              <p className="mt-0.5 text-xs text-ink-soft">Africa · Receives USDT</p>
             </div>
           </div>
 
@@ -76,7 +76,7 @@ export function ExampleDonationCard() {
               <dd>{formatUsd(fees.giveportFee)}</dd>
             </div>
             <div className="flex justify-between text-ink-soft">
-              <dt>Payment processing (NOWPayments)</dt>
+              <dt>Payment processing</dt>
               <dd>
                 {formatUsd(fees.processorFeeMin)}–{formatUsd(fees.processorFeeMax)}
               </dd>

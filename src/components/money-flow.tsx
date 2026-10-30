@@ -12,9 +12,9 @@ const steps: FlowStep[] = [
     detail: "Card, Apple Pay, Google Pay or crypto, on your page. No account needed.",
   },
   {
-    label: "NOWPayments",
+    label: "Secure checkout",
     who: "Payment processor",
-    detail: "Takes the payment and converts card money into crypto.",
+    detail: "Takes the payment and converts card money into crypto. Giveport never sees card numbers.",
   },
   {
     label: "Giveport",

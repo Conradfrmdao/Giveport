@@ -2,6 +2,7 @@ import Link from "next/link";
 import { ExampleDonationCard } from "@/components/example-donation-card";
 import { FeeExample } from "@/components/fee-example";
 import { MoneyFlow } from "@/components/money-flow";
+import { AfricaStrip } from "@/components/africa-strip";
 import { formatPercent, siteConfig } from "@/lib/config";
 
 const recipientPoints = [
@@ -21,7 +22,7 @@ const donorPoints = [
 const safeguards = [
   {
     title: "We never touch card details",
-    body: "Checkout is run by NOWPayments. Card numbers go to them and their card partner, never to Giveport's servers.",
+    body: "Checkout is handled by a regulated payment processor. Card numbers go directly to them, never to Giveport's servers.",
   },
   {
     title: "Wallet changes are locked down",
@@ -29,7 +30,7 @@ const safeguards = [
   },
   {
     title: "Every payment is verified",
-    body: "A donation only counts once NOWPayments sends a signed confirmation. Amounts are never taken from the browser.",
+    body: "A donation only counts once our payment partner sends a signed confirmation. Amounts are never taken from the browser.",
   },
   {
     title: "Bad pages get stopped",
@@ -54,12 +55,12 @@ export default function HomePage() {
       <section className="border-b border-line">
         <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 pt-12 pb-16 sm:px-8 md:pt-20 md:pb-24 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
           <div>
-            <p className="text-sm text-ink-soft">For people in Uganda and across Africa</p>
+            <p className="text-sm text-ink-soft">Made for Africa</p>
             <h1 className="mt-4 font-serif text-[2.6rem] leading-[1.05] tracking-tight text-ink sm:text-6xl">
               Receive donations from abroad, straight to your own wallet.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
-              Stripe and PayPal don&apos;t pay out here. Giveport gives you a personal donation link
+              Stripe and PayPal don&apos;t pay out across Africa. Giveport gives you a personal donation link
               that people abroad can pay by card, Apple Pay, Google Pay or crypto. The money arrives
               in a crypto wallet that you control.
             </p>
@@ -91,6 +92,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Africa strip */}
+      <AfricaStrip />
 
       {/* How the money moves */}
       <section className="border-b border-line bg-card">
@@ -127,7 +131,7 @@ export default function HomePage() {
               ))}
             </ol>
             <p className="mt-6 text-sm text-ink-soft">
-              For individuals, families, churches, schools, clinics and small community groups.
+              For individuals, families, churches, schools, clinics and small community groups across Africa.
             </p>
           </div>
 
@@ -147,7 +151,7 @@ export default function HomePage() {
               ))}
             </ul>
             <p className="mt-6 text-sm text-ink-soft">
-              Card payments are handled by a card-to-crypto partner of NOWPayments.
+              Card payments are converted into crypto securely during checkout.
             </p>
           </div>
         </div>
@@ -163,7 +167,7 @@ export default function HomePage() {
             </h2>
             <p className="mt-4 leading-relaxed text-ink-soft">
               Sign-up is free and there is no monthly charge. Giveport takes{" "}
-              {formatPercent(siteConfig.feePercent)} of each donation. NOWPayments takes its own small
+              {formatPercent(siteConfig.feePercent)} of each donation. Our payment partner takes its own small
               processing fee, and the blockchain charges a network fee to move the money.
             </p>
             <p className="mt-4 leading-relaxed text-ink-soft">

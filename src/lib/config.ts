@@ -28,12 +28,12 @@ export const siteConfig = {
   // Giveport's own fee, in percent. Placeholder until the final fee is decided.
   feePercent: readNumber(process.env.GIVEPORT_FEE_PERCENT, 2),
 
-  // NOWPayments' published processing fee range, in percent.
+  // Payment processing fee range, in percent.
   // 0.5% for simple payments, 1% for multi-currency or fixed-rate payments.
   processorFeeMinPercent: 0.5,
   processorFeeMaxPercent: 1,
 
-  // The site runs in test mode until NOWPayments verification and legal checks are done.
+  // The site runs in test mode until payment verification and legal checks are done.
   testMode: true,
 };
 

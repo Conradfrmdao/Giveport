@@ -32,14 +32,14 @@ const feeLines: FeeLine[] = [
   {
     name: "Payment processing",
     amount: `${formatPercent(siteConfig.processorFeeMinPercent)}–${formatPercent(siteConfig.processorFeeMaxPercent)}`,
-    chargedBy: "NOWPayments",
+    chargedBy: "Our payment partner",
     explanation:
-      "NOWPayments charges 0.5% on simple payments and 1% when currencies are converted or the rate is fixed.",
+      "Our payment partner charges 0.5% on simple payments and 1% when currencies are converted or the rate is fixed.",
   },
   {
     name: "Card, Apple Pay, Google Pay",
     amount: "Shown at checkout",
-    chargedBy: "NOWPayments' card partner",
+    chargedBy: "Payment partner",
     explanation:
       "Turning card money into crypto can carry an extra charge. The donor sees it on the checkout page before paying.",
   },
@@ -114,9 +114,9 @@ export default function FeesPage() {
           <div className="prose-gp">
             <h2>Why not just use PayPal or Stripe?</h2>
             <p>
-              Neither one lets people in Uganda and most of Africa receive payouts. Crypto stablecoins
+              Neither one lets people across Africa receive payouts reliably. Crypto stablecoins
               are one of the few routes that let a donor in London or Toronto pay with an ordinary card
-              and have the money reach someone in Gulu or Mbarara without a bank in the middle.
+              and have the money reach someone in Nairobi, Accra or Kampala without a bank in the middle.
             </p>
             <h2>Will the fee change?</h2>
             <p>

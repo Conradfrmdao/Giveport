@@ -25,7 +25,7 @@ const groups: QuestionGroup[] = [
       {
         question: "Who can use Giveport?",
         answer:
-          "People and groups in Uganda and other African countries who need to receive donations from abroad: individuals, families, churches, schools, clinics and small community groups. You must be 18 or older and the money must be for a lawful purpose. Our terms list what is not allowed.",
+          "People and groups across Africa who need to receive donations from abroad: individuals, families, churches, schools, clinics and small community groups. You must be 18 or older and the money must be for a lawful purpose. Our terms list what is not allowed.",
       },
       {
         question: "What is a crypto wallet and do I need one?",
@@ -38,14 +38,14 @@ const groups: QuestionGroup[] = [
           "We suggest a stablecoin, USDT or USDC, on a low-fee network. Stablecoins track the US dollar, so the value doesn't swing the way Bitcoin does, and low-fee networks keep the cost of each transfer small. Make sure the network you pick on Giveport matches the network of your wallet address.",
       },
       {
-        question: "How do I turn it into shillings?",
+        question: "How do I turn it into local currency?",
         answer:
-          "You sell the crypto yourself, for example on a local exchange or a peer-to-peer service that pays out to mobile money or a bank account. Giveport does not do this step yet. We plan to publish simple guides for Uganda.",
+          "You sell the crypto yourself, for example on a local exchange or a peer-to-peer service that pays out to mobile money or a bank account. Giveport does not do this step yet. We plan to publish simple guides for popular exchanges in different African countries.",
       },
       {
         question: "How fast does the money arrive?",
         answer:
-          "Once the donor's payment is confirmed, Giveport sends your share to your wallet. Crypto payments usually confirm within minutes. Card payments can take longer while the card partner completes its checks.",
+          "Once the donor's payment is confirmed, Giveport sends your share to your wallet. Crypto payments usually confirm within minutes. Card payments can take longer while the payment partner completes its checks.",
       },
       {
         question: "What if someone gets into my account?",
@@ -65,7 +65,7 @@ const groups: QuestionGroup[] = [
       {
         question: "Who handles my card details?",
         answer:
-          "NOWPayments and its card partner. You enter your card on their checkout page, not on Giveport. We never see or store your card number.",
+          "Our payment partner. You enter your card on their secure checkout page, not on Giveport. We never see or store your card number.",
       },
       {
         question: "Do I need an account?",
@@ -95,7 +95,7 @@ const groups: QuestionGroup[] = [
       {
         question: "Why should I trust Giveport?",
         answer:
-          "Because we are open about how it works. Payments are run by NOWPayments, not by us. Every fee is published. Every donation and payout is recorded. And you can email a real person if something goes wrong.",
+          "Because we are open about how it works. Every fee is published on our fees page. Every donation and payout is recorded. Payments go through a regulated processor. And you can email a real person if something goes wrong.",
       },
       {
         question: "Why not mobile money or bank payouts?",

@@ -20,8 +20,8 @@ export default function TermsPage() {
       <h2>1. What Giveport is</h2>
       <p>
         Giveport is a service that gives recipients a public donation page and passes donations made on
-        that page to the recipient&apos;s own crypto wallet. Payments are processed by NOWPayments and
-        its partners. Giveport is not a bank, does not hold deposits, does not offer savings or
+        that page to the recipient&apos;s own crypto wallet. Payments are processed by a regulated third-party
+        payment partner. Giveport is not a bank, does not hold deposits, does not offer savings or
         investments, and is not a registered charity.
       </p>
 
@@ -42,7 +42,7 @@ export default function TermsPage() {
         <li>sell goods or services, or take payments that are not genuine donations;</li>
         <li>offer investments, loans, lotteries, gambling or &quot;money doubling&quot; schemes;</li>
         <li>move money for someone else or hide where money comes from;</li>
-        <li>break the laws of Uganda, the recipient&apos;s country or the donor&apos;s country.</li>
+        <li>break the laws of the recipient&apos;s country or the donor&apos;s country.</li>
       </ul>
       <p>
         We may pause or close any account that breaks these rules, and we may report suspected crime to
@@ -59,7 +59,7 @@ export default function TermsPage() {
 
       <h2>5. How payouts work</h2>
       <p>
-        After NOWPayments confirms a donation, Giveport deducts its fee and sends the rest to the wallet
+        After a donation is confirmed, Giveport deducts its fee and sends the rest to the wallet
         address on the recipient&apos;s profile. You are responsible for entering the correct address
         and network. Crypto sent to a wrong address usually cannot be recovered. We may hold a payout
         while we look into a report, a suspected scam, or a request from law enforcement.

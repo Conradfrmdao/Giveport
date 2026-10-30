@@ -27,12 +27,12 @@ export default function PrivacyPage() {
       <ul>
         <li><strong>Donation details:</strong> amount, date, and the page you gave to.</li>
         <li><strong>Optional details:</strong> your name, email and message, only if you choose to give them. Your email is used to send your receipt.</li>
-        <li><strong>Card details:</strong> none. You enter card details on the NOWPayments checkout, and Giveport never receives them.</li>
+        <li><strong>Card details:</strong> none. You enter card details on the payment partner&apos;s checkout, and Giveport never receives them.</li>
       </ul>
 
       <h2>Who we share it with</h2>
       <ul>
-        <li><strong>NOWPayments and its card partner</strong>, to process payments and payouts. They may ask donors for extra details to meet their own legal checks.</li>
+        <li><strong>Our payment partner</strong>, to process payments and payouts. They may ask donors for extra details to meet their own legal checks.</li>
         <li><strong>Our hosting, database and email providers</strong>, who store and send data for us under their own security terms.</li>
         <li><strong>The recipient</strong> sees a donor&apos;s name and message if the donor gives them. Donor email addresses are not shown to recipients.</li>
         <li><strong>Authorities</strong>, when the law requires it or to stop fraud.</li>
@@ -55,8 +55,8 @@ export default function PrivacyPage() {
       <h2>Your choices</h2>
       <p>
         You can ask to see, correct or delete the information we hold about you by emailing{" "}
-        <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>. If you are in
-        Uganda, you also have rights under the Data Protection and Privacy Act, 2019.
+        <a href={`mailto:${siteConfig.contactEmail}`}>{siteConfig.contactEmail}</a>. You may also have
+        rights under the data protection laws of your country.
       </p>
 
       <h2>Cookies</h2>

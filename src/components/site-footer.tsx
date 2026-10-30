@@ -33,8 +33,8 @@ export function SiteFooter() {
         <div>
           <Logo />
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-ink-soft">
-            Donation links for people in Uganda and across Africa. Payments are processed by
-            NOWPayments. Giveport never sees card details.
+            Donation links for people across Africa. Giveport handles the checkout
+            and sends donations straight to your crypto wallet. We never see card details.
           </p>
         </div>
 
@@ -70,7 +70,7 @@ export function SiteFooter() {
       <div className="border-t border-line">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-5 py-5 text-xs text-ink-soft sm:flex-row sm:justify-between sm:px-8">
           <p>
-            © <CopyrightYear /> Giveport. Made in Uganda.
+            © <CopyrightYear /> Giveport. Made for Africa.
           </p>
           <p>Giveport is not a bank and does not hold deposits.</p>
         </div>

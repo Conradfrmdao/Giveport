@@ -53,13 +53,13 @@ const donationStages: Stage[] = [
   {
     title: "They pay on a secure checkout",
     paragraphs: [
-      "Giveport creates an invoice with NOWPayments, our payment processor, and sends the donor to its checkout. They can pay by card, Apple Pay, Google Pay or crypto. Card payments are converted into crypto by NOWPayments' card partner.",
+      "Giveport sends the donor to a secure checkout page run by our payment partner. They can pay by card, Apple Pay, Google Pay or crypto. Card payments are converted into crypto during checkout.",
     ],
   },
   {
     title: "The payment is confirmed",
     paragraphs: [
-      "When the payment is finished, NOWPayments sends Giveport a signed message. We check the signature, check the amount against our own records, and only then mark the donation as paid.",
+      "When the payment is finished, our payment partner sends Giveport a signed confirmation. We check the signature, match it against our own records, and only then mark the donation as paid.",
     ],
   },
   {
@@ -71,7 +71,7 @@ const donationStages: Stage[] = [
   {
     title: "You cash out when you choose",
     paragraphs: [
-      "The money is in your wallet. You can hold it, send it on, or sell it for shillings through a local exchange or peer-to-peer service. Giveport does not do this step for you yet.",
+      "The money is in your wallet. You can hold it, send it on, or sell it for local currency through an exchange or peer-to-peer service in your country. Giveport does not do this step for you yet.",
     ],
   },
 ];
